@@ -14,7 +14,7 @@
     </div>
 
     <div class="row">
-      <app-quote-details *ngIf="quote.showQuoteDetails" [quote]='quote'></app-quote-details>
+      <app-quote-details *ngIf="quote.showQuoteDetails" [quote]='quote' (isDone)='toaQuote($event, i)'></app-quote-details>
     </div>
   </div>
 

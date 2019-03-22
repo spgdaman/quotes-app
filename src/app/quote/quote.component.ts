@@ -9,11 +9,17 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote("You are the bomb", "myself", "Simon Gatheru"),
-    new Quote("You are the bombs", "himuselfu", "Simon Gatheru"),
-    new Quote("You are the bombed", "thyself", "Simon Gatheru"),
-    new Quote("You are the bomber", "themself", "Simon Gatheru")
+    new Quote(1, "You are the bomb", "myself", "Simon Gatheru"),
+    new Quote(2, "You are the bombs", "himuselfu", "Simon Gatheru"),
+    new Quote(3, "You are the bombed", "thyself", "Simon Gatheru"),
+    new Quote(4, "You are the bomber", "themself", "Simon Gatheru")
   ];
+
+  toaQuote(isDone, index) {
+    if (isDone) {
+      this.quotes.splice(index,1);
+    }
+  }
 
   addNewQuote(quote) {
     this.quotes.push(quote);
