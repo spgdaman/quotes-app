@@ -4,18 +4,30 @@
 
 <div class="container">
   <div class="row">
-      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </div>
 
   <div class="row" *ngFor='let quote of quotes; let i =index'>
     <div class="col-md-12 row">
       <h4>"{{quote.quote}}"</h4>
-      <button class="btn btn-success" (click)='toggleQuote(i)'> Show Quote </button>
+      <div class="container">
+        <div class="row">
+          <button (click)='upvoteQuote(i)' class="btn btn-success">Upvote {{quote.upvote}}</button>
+          <button class="btn btn-danger">Downvote {{quote.downvote}}</button>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <button class="btn btn-success" (click)='toggleQuote(i)'> Show Quote </button>
+        </div>
+      </div>
     </div>
 
     <div class="row">
       <app-quote-details *ngIf="quote.showQuoteDetails" [quote]='quote' (isDone)='toaQuote($event, i)'></app-quote-details>
     </div>
+
   </div>
 
 </div>
