@@ -1,5 +1,5 @@
-<div *ngFor='let quote of quotes'>
-  <h4> " {{quote.quote}} " </h4>
-  <p> {{quote.author}} </p>
-  <p> {{quote.submittor}} </p>
+<div *ngFor='let quote of quotes; let i =index'>
+  <h4> "{{quote.quote}}" </h4>
+  <button (click)='toggleQuote(i)'> Show Quote </button>
+  <app-quote-details *ngIf="quote.showQuoteDetails" [quote]='quote'></app-quote-details>
 </div>

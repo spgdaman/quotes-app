@@ -9,11 +9,15 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote("You are the bomb","myself","Simon Gatheru"),
-    new Quote("You are the bomb","myself","Simon Gatheru"),
-    new Quote("You are the bomb","myself","Simon Gatheru"),
-    new Quote("You are the bomb","myself","Simon Gatheru")
+    new Quote("You are the bomb", "myself", "Simon Gatheru"),
+    new Quote("You are the bombs", "himuselfu", "Simon Gatheru"),
+    new Quote("You are the bombed", "thyself", "Simon Gatheru"),
+    new Quote("You are the bomber", "themself", "Simon Gatheru")
   ];
+
+  toggleQuote(index) {
+    this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
+  }
 
   constructor() { }
 
