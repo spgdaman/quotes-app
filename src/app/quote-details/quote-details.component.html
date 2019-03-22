@@ -1,12 +1,18 @@
 <div class="container">
-  <footer class="row blockquote-footer">
-    <cite title="Source Title"> {{quote.author}} </cite>
-  </footer>
-  <div class="row">
-    <p>Posted by: {{quote.submittor}} </p>
-  </div>
 
-  <div class="row">
-    <button class="btn btn-danger btn-sm" (click)='removeQuote(true)'>Remove Quote</button>
+  <button (click)='quote.upvote = quote.upvote + 1' class="btn btn-success btn-sm">Upvote {{quote.upvote}}</button>
+  <button (click)='quote.downvote = quote.downvote -1' class="btn btn-danger btn-sm">Downvote {{quote.downvote}}</button>
+
+  <div class="offset">
+    <footer class="row blockquote-footer">
+      <cite title="Source Title"> {{quote.author}} </cite>
+    </footer>
+    <div class="row">
+      <p>Posted by: {{quote.submittor}} </p>
+    </div>
+
+    <div class="row">
+      <button class="btn btn-danger btn-sm" (click)='removeQuote(true)'>Remove Quote</button>
+    </div>
   </div>
 </div>
