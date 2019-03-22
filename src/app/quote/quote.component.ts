@@ -15,8 +15,8 @@ export class QuoteComponent implements OnInit {
     new Quote("You are the bomber", "themself", "Simon Gatheru")
   ];
 
-  addNewGoal(quote){
-    this.quote.push(quote);
+  addNewQuote(quote) {
+    this.quotes.push(quote);
   }
 
   toggleQuote(index) {
