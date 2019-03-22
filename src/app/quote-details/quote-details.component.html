@@ -1,11 +1,12 @@
 <div class="container">
+  <footer class="row blockquote-footer">
+    <cite title="Source Title"> {{quote.author}} </cite>
+  </footer>
   <div class="row">
-    <p> {{quote.author}} </p>
+    <p>Posted by: {{quote.submittor}} </p>
   </div>
+
   <div class="row">
-    <p> {{quote.submittor}} </p>
-  </div>
-  <div class="row">
-    <button class="btn btn-danger" (click)='removeQuote(true)'>Remove Quote</button>
+    <button class="btn btn-danger btn-sm" (click)='removeQuote(true)'>Remove Quote</button>
   </div>
 </div>
