@@ -1,14 +1,21 @@
-<div class="container">
+<div class="center container">
 
   <button (click)='quote.upvote = quote.upvote + 1' class="btn btn-success btn-sm">Upvote {{quote.upvote}}</button>
   <button (click)='quote.downvote = quote.downvote -1' class="btn btn-danger btn-sm">Downvote {{quote.downvote}}</button>
 
   <div class="offset">
-    <footer class="row blockquote-footer">
-      <cite title="Source Title"> {{quote.author}} </cite>
-    </footer>
+    <div class="row">
+      <footer class="row blockquote-footer">
+        <cite title="Source Title"> {{quote.author}} </cite>
+      </footer>
+    </div>
+
     <div class="row">
       <p>Posted by: {{quote.submittor}} </p>
+    </div>
+
+    <div class="row">
+      <p>Created: {{quote.quoteDate | date}} days ago</p>
     </div>
 
     <div class="row">
