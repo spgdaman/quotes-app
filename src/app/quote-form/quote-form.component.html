@@ -1,13 +1,13 @@
 <div class="center container">
   <div class="row">
 
-    <form (ngSubmit)="submitQuote()" #quoteForm='ngForm'>
+    <form #quoteForm='ngForm' (ngSubmit)='submitQuote()'>
 
       <div class="form-group">
         <label for="quote">Quote:</label>
         <div class="container">
           <div class="row">
-            <textarea [(ngModel)]='newQuote.quote' name="quote" rows="8" #quote="ngModel" required></textarea>
+            <textarea [(ngModel)]='newQuote.quote' name="quote" rows="8" #quote='ngModel' required></textarea>
           </div>
         </div>
 
@@ -20,7 +20,7 @@
         <label for="author">Author:</label>
         <div class="container">
           <div class="row">
-            <input type="text" [(ngModel)]='newQuote.author' name="author" #author="ngModel" required>
+            <input type="text" [(ngModel)]='newQuote.author' name="author" #author='ngModel' required>
           </div>
         </div>
 
@@ -33,7 +33,7 @@
         <label for="submittor">Submitter:</label>
         <div class="container">
           <div class="row">
-            <input type="text" [(ngModel)]='newQuote.submittor' name="submittor" #submittor="ngModel" required>
+            <input type="text" [(ngModel)]='newQuote.submittor' name="submittor" #submittor='ngModel' required>
           </div>
         </div>
 
@@ -42,7 +42,7 @@
         </div>
       </div>
 
-      <button class="btn btn-primary btn-md">Add Quote</button>
+      <button type="submit" class="btn btn-primary btn-md">Add Quote</button>
 
     </form>
 

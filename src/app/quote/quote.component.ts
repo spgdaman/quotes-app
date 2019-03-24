@@ -40,6 +40,9 @@ export class QuoteComponent implements OnInit {
   }
 
   addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.quoteDate = new Date(quote.quoteDate);
     this.quotes.push(quote);
   }
 
