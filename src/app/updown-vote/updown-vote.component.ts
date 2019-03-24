@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Quote } from '../quote';
 
 @Component({
   selector: 'app-updown-vote',
