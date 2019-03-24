@@ -1,6 +1,6 @@
 <div class="center container">
 
-  <button (click)='quote.upvote = quote.upvote + 1' class="btn btn-success btn-sm">Upvote {{quote.upvote}}</button>
+  <button (click)='quote.upvote = quote.upvote + 1' (click)='quote.highestUpvote = true' class="btn btn-success btn-sm">Upvote {{quote.upvote}}</button>
   <button (click)='quote.downvote = quote.downvote -1' class="btn btn-danger btn-sm">Downvote {{quote.downvote}}</button>
 
   <div class="offset">

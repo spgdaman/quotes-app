@@ -1,15 +1,23 @@
-import { Directive, ElementRef } from '@angular/core';
-
+import { Directive, ElementRef, HostListener } from '@angular/core';
+import { Quote } from './quote';
 
 @Directive({
   selector: '[appUpvoteHighlight]'
 })
 export class UpvoteHighlightDirective {
 
-  constructor(private elem: ElementRef) { }
-
-  private highlight(action: string) {
-    this.elem.nativeElement.style.textDecoration = action;
+  constructor(private elem: ElementRef) {
+    this.elem.nativeElement.style.backgroundColor = 'lightblue';
   }
+
+  // // @HostListener('click') onClicks() {
+  // //   if (this.highestUpvote) {
+  // //     this.highlight('lightblue');
+  // //   }
+  // // }
+  //
+  // private highlight(color: string) {
+  //   this.elem.nativeElement.style.backgroundColor = 'lightblue';
+  // }
 
 }

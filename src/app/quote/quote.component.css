@@ -1,3 +1,7 @@
 .quote-center {
   text-align:center;
 }
+
+blockquote {
+  margin-top: 15px;
+}
