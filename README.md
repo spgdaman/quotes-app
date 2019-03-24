@@ -1,27 +1,28 @@
-# Quotes
+# Project Name
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+quotes  
 
-## Development server
+## Project description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project is about a simple quotes app, where the user can add a quote and it's details, upvote and downvote on the quote.
 
-## Code scaffolding
+## Author Information
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-   **Simon Gatheru Waigi** - _Initial work_ - [spgdaman](https://github.com/spgdaman).
 
-## Build
+## Set up instructions
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Clone or download the project via the link in the description.
 
-## Running unit tests
+## Technologies used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+HTML, CSS, JavaScript, Bootstrap, Angular, TypeScript.
 
-## Running end-to-end tests
+## Contact information
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+-   simonwaigi@outlook.com
 
-## Further help
+## License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) Simon Gatheru Waigi
+This project is licensed under the [GNU Open Source License](LICENSE).
